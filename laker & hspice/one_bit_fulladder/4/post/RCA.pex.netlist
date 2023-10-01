@@ -1,0 +1,995 @@
+* File: RCA.pex.netlist
+* Created: Fri May 26 20:11:12 2023
+* Program "Calibre xRC"
+* Version "v2017.4_19.14"
+* 
+.include "RCA.pex.netlist.pex"
+.subckt fourbitsadder  A0 B0 C0 A1 B1 A2 B2 A3 B3 C4 S0 S1 S2 S3 vdd gnd
+
+* 
+* S3	S3
+* C4	C4
+* S2	S2
+* S1	S1
+* GND	GND
+* S0	S0
+* VDD	VDD
+* C0	C0
+* B3	B3
+* A3	A3
+* B2	B2
+* A2	A2
+* B1	B1
+* A1	A1
+* B0	B0
+* A0	A0
+mXfulladder0/Xhalfadder1/Xinv1/MnMos
++ N_XFULLADDER0/W2_Xfulladder0/Xhalfadder1/Xinv1/MnMos_d
++ N_XFULLADDER0/XHALFADDER1/W1_Xfulladder0/Xhalfadder1/Xinv1/MnMos_g
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder0/Xhalfadder1/XXOR1/MnMos1
++ N_XFULLADDER0/XHALFADDER1/XXOR1/INV_X_Xfulladder0/Xhalfadder1/XXOR1/MnMos1_d
++ N_A0_Xfulladder0/Xhalfadder1/XXOR1/MnMos1_g
++ N_GND_Xfulladder0/Xhalfadder1/XXOR1/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder0/Xhalfadder1/Xnand21/MnMos1
++ N_XFULLADDER0/XHALFADDER1/W1_Xfulladder0/Xhalfadder1/Xnand21/MnMos1_d
++ N_A0_Xfulladder0/Xhalfadder1/Xnand21/MnMos1_g
++ N_XFULLADDER0/XHALFADDER1/XNAND21/N1_S_Xfulladder0/Xhalfadder1/Xnand21/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXfulladder0/Xhalfadder1/XXOR1/MnMos10
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder1/XXOR1/MnMos10_d
++ N_B0_Xfulladder0/Xhalfadder1/XXOR1/MnMos10_g
++ N_noxref_26_Xfulladder0/Xhalfadder1/XXOR1/MnMos10_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+mXfulladder0/Xhalfadder1/XXOR1/MnMos9
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder1/XXOR1/MnMos9_d
++ N_XFULLADDER0/XHALFADDER1/XXOR1/INV_X_Xfulladder0/Xhalfadder1/XXOR1/MnMos9_g
++ N_noxref_26_Xfulladder0/Xhalfadder1/XXOR1/MnMos9_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder0/Xhalfadder1/Xnand21/MnMos2
++ N_XFULLADDER0/XHALFADDER1/XNAND21/N1_S_Xfulladder0/Xhalfadder1/Xnand21/MnMos2_d
++ N_B0_Xfulladder0/Xhalfadder1/Xnand21/MnMos2_g
++ N_GND_Xfulladder0/Xhalfadder1/Xnand21/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder0/Xhalfadder1/XXOR1/MnMos7
++ N_noxref_26_Xfulladder0/Xhalfadder1/XXOR1/MnMos7_d
++ N_A0_Xfulladder0/Xhalfadder1/XXOR1/MnMos7_g
++ N_GND_Xfulladder0/Xhalfadder1/XXOR1/MnMos7_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder0/Xhalfadder1/XXOR1/MnMos8
++ N_noxref_26_Xfulladder0/Xhalfadder1/XXOR1/MnMos8_d
++ N_XFULLADDER0/XHALFADDER1/XXOR1/INV_Y_Xfulladder0/Xhalfadder1/XXOR1/MnMos8_g
++ N_GND_Xfulladder0/Xhalfadder1/XXOR1/MnMos8_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXfulladder0/Xhalfadder2/Xinv1/MnMos
++ N_XFULLADDER0/W3_Xfulladder0/Xhalfadder2/Xinv1/MnMos_d
++ N_XFULLADDER0/XHALFADDER2/W1_Xfulladder0/Xhalfadder2/Xinv1/MnMos_g
++ N_GND_Xfulladder0/Xhalfadder2/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder0/Xhalfadder1/XXOR1/MnMos2
++ N_XFULLADDER0/XHALFADDER1/XXOR1/INV_Y_Xfulladder0/Xhalfadder1/XXOR1/MnMos2_d
++ N_B0_Xfulladder0/Xhalfadder1/XXOR1/MnMos2_g
++ N_GND_Xfulladder0/Xhalfadder1/XXOR1/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder0/Xhalfadder2/Xnand21/MnMos1
++ N_XFULLADDER0/XHALFADDER2/W1_Xfulladder0/Xhalfadder2/Xnand21/MnMos1_d
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder2/Xnand21/MnMos1_g
++ N_XFULLADDER0/XHALFADDER2/XNAND21/N1_S_Xfulladder0/Xhalfadder2/Xnand21/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXfulladder0/Xhalfadder2/XXOR1/MnMos1
++ N_XFULLADDER0/XHALFADDER2/XXOR1/INV_X_Xfulladder0/Xhalfadder2/XXOR1/MnMos1_d
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder2/XXOR1/MnMos1_g
++ N_GND_Xfulladder0/Xhalfadder2/XXOR1/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder0/Xhalfadder2/Xnand21/MnMos2
++ N_XFULLADDER0/XHALFADDER2/XNAND21/N1_S_Xfulladder0/Xhalfadder2/Xnand21/MnMos2_d
++ N_C0_Xfulladder0/Xhalfadder2/Xnand21/MnMos2_g
++ N_GND_Xfulladder0/Xhalfadder2/Xnand21/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder0/Xhalfadder2/XXOR1/MnMos10
++ N_S0_Xfulladder0/Xhalfadder2/XXOR1/MnMos10_d
++ N_C0_Xfulladder0/Xhalfadder2/XXOR1/MnMos10_g
++ N_noxref_29_Xfulladder0/Xhalfadder2/XXOR1/MnMos10_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+mXfulladder0/Xhalfadder2/XXOR1/MnMos9
++ N_S0_Xfulladder0/Xhalfadder2/XXOR1/MnMos9_d
++ N_XFULLADDER0/XHALFADDER2/XXOR1/INV_X_Xfulladder0/Xhalfadder2/XXOR1/MnMos9_g
++ N_noxref_29_Xfulladder0/Xhalfadder2/XXOR1/MnMos9_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder0/Xinv1/MnMos N_C1_Xfulladder0/Xinv1/MnMos_d
++ N_XFULLADDER0/W4_Xfulladder0/Xinv1/MnMos_g N_GND_Xfulladder0/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.5e-13
++ AS=2.45e-13 PD=1.5e-06 PS=1.48e-06
+mXfulladder0/Xhalfadder2/XXOR1/MnMos7
++ N_noxref_29_Xfulladder0/Xhalfadder2/XXOR1/MnMos7_d
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder2/XXOR1/MnMos7_g
++ N_GND_Xfulladder0/Xhalfadder2/XXOR1/MnMos7_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder0/Xhalfadder2/XXOR1/MnMos8
++ N_noxref_29_Xfulladder0/Xhalfadder2/XXOR1/MnMos8_d
++ N_XFULLADDER0/XHALFADDER2/XXOR1/INV_Y_Xfulladder0/Xhalfadder2/XXOR1/MnMos8_g
++ N_GND_Xfulladder0/Xhalfadder2/XXOR1/MnMos8_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXfulladder0/Xnor1/MnMos3 N_XFULLADDER0/W4_Xfulladder0/Xnor1/MnMos3_d
++ N_XFULLADDER0/W2_Xfulladder0/Xnor1/MnMos3_g N_GND_Xfulladder0/Xnor1/MnMos3_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder0/Xnor1/MnMos4 N_XFULLADDER0/W4_Xfulladder0/Xnor1/MnMos4_d
++ N_XFULLADDER0/W3_Xfulladder0/Xnor1/MnMos4_g N_GND_Xfulladder0/Xnor1/MnMos4_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder0/Xhalfadder2/XXOR1/MnMos2
++ N_XFULLADDER0/XHALFADDER2/XXOR1/INV_Y_Xfulladder0/Xhalfadder2/XXOR1/MnMos2_d
++ N_C0_Xfulladder0/Xhalfadder2/XXOR1/MnMos2_g
++ N_GND_Xfulladder0/Xhalfadder2/XXOR1/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder1/Xhalfadder1/Xinv1/MnMos
++ N_XFULLADDER1/W2_Xfulladder1/Xhalfadder1/Xinv1/MnMos_d
++ N_XFULLADDER1/XHALFADDER1/W1_Xfulladder1/Xhalfadder1/Xinv1/MnMos_g
++ N_GND_Xfulladder1/Xhalfadder1/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder1/Xhalfadder1/XXOR1/MnMos1
++ N_XFULLADDER1/XHALFADDER1/XXOR1/INV_X_Xfulladder1/Xhalfadder1/XXOR1/MnMos1_d
++ N_A1_Xfulladder1/Xhalfadder1/XXOR1/MnMos1_g
++ N_GND_Xfulladder1/Xhalfadder1/XXOR1/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder1/Xhalfadder1/Xnand21/MnMos1
++ N_XFULLADDER1/XHALFADDER1/W1_Xfulladder1/Xhalfadder1/Xnand21/MnMos1_d
++ N_A1_Xfulladder1/Xhalfadder1/Xnand21/MnMos1_g
++ N_XFULLADDER1/XHALFADDER1/XNAND21/N1_S_Xfulladder1/Xhalfadder1/Xnand21/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXfulladder1/Xhalfadder1/XXOR1/MnMos10
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder1/XXOR1/MnMos10_d
++ N_B1_Xfulladder1/Xhalfadder1/XXOR1/MnMos10_g
++ N_noxref_32_Xfulladder1/Xhalfadder1/XXOR1/MnMos10_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+mXfulladder1/Xhalfadder1/XXOR1/MnMos9
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder1/XXOR1/MnMos9_d
++ N_XFULLADDER1/XHALFADDER1/XXOR1/INV_X_Xfulladder1/Xhalfadder1/XXOR1/MnMos9_g
++ N_noxref_32_Xfulladder1/Xhalfadder1/XXOR1/MnMos9_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder1/Xhalfadder1/Xnand21/MnMos2
++ N_XFULLADDER1/XHALFADDER1/XNAND21/N1_S_Xfulladder1/Xhalfadder1/Xnand21/MnMos2_d
++ N_B1_Xfulladder1/Xhalfadder1/Xnand21/MnMos2_g
++ N_GND_Xfulladder1/Xhalfadder1/Xnand21/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder1/Xhalfadder1/XXOR1/MnMos7
++ N_noxref_32_Xfulladder1/Xhalfadder1/XXOR1/MnMos7_d
++ N_A1_Xfulladder1/Xhalfadder1/XXOR1/MnMos7_g
++ N_GND_Xfulladder1/Xhalfadder1/XXOR1/MnMos7_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder1/Xhalfadder1/XXOR1/MnMos8
++ N_noxref_32_Xfulladder1/Xhalfadder1/XXOR1/MnMos8_d
++ N_XFULLADDER1/XHALFADDER1/XXOR1/INV_Y_Xfulladder1/Xhalfadder1/XXOR1/MnMos8_g
++ N_GND_Xfulladder1/Xhalfadder1/XXOR1/MnMos8_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXfulladder1/Xhalfadder2/Xinv1/MnMos
++ N_XFULLADDER1/W3_Xfulladder1/Xhalfadder2/Xinv1/MnMos_d
++ N_XFULLADDER1/XHALFADDER2/W1_Xfulladder1/Xhalfadder2/Xinv1/MnMos_g
++ N_GND_Xfulladder1/Xhalfadder2/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder1/Xhalfadder1/XXOR1/MnMos2
++ N_XFULLADDER1/XHALFADDER1/XXOR1/INV_Y_Xfulladder1/Xhalfadder1/XXOR1/MnMos2_d
++ N_B1_Xfulladder1/Xhalfadder1/XXOR1/MnMos2_g
++ N_GND_Xfulladder1/Xhalfadder1/XXOR1/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder1/Xhalfadder2/Xnand21/MnMos1
++ N_XFULLADDER1/XHALFADDER2/W1_Xfulladder1/Xhalfadder2/Xnand21/MnMos1_d
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder2/Xnand21/MnMos1_g
++ N_XFULLADDER1/XHALFADDER2/XNAND21/N1_S_Xfulladder1/Xhalfadder2/Xnand21/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXfulladder1/Xhalfadder2/XXOR1/MnMos1
++ N_XFULLADDER1/XHALFADDER2/XXOR1/INV_X_Xfulladder1/Xhalfadder2/XXOR1/MnMos1_d
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder2/XXOR1/MnMos1_g
++ N_GND_Xfulladder1/Xhalfadder2/XXOR1/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder1/Xhalfadder2/Xnand21/MnMos2
++ N_XFULLADDER1/XHALFADDER2/XNAND21/N1_S_Xfulladder1/Xhalfadder2/Xnand21/MnMos2_d
++ N_C1_Xfulladder1/Xhalfadder2/Xnand21/MnMos2_g
++ N_GND_Xfulladder1/Xhalfadder2/Xnand21/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder1/Xhalfadder2/XXOR1/MnMos10
++ N_S1_Xfulladder1/Xhalfadder2/XXOR1/MnMos10_d
++ N_C1_Xfulladder1/Xhalfadder2/XXOR1/MnMos10_g
++ N_noxref_35_Xfulladder1/Xhalfadder2/XXOR1/MnMos10_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+mXfulladder1/Xhalfadder2/XXOR1/MnMos9
++ N_S1_Xfulladder1/Xhalfadder2/XXOR1/MnMos9_d
++ N_XFULLADDER1/XHALFADDER2/XXOR1/INV_X_Xfulladder1/Xhalfadder2/XXOR1/MnMos9_g
++ N_noxref_35_Xfulladder1/Xhalfadder2/XXOR1/MnMos9_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder1/Xinv1/MnMos N_C2_Xfulladder1/Xinv1/MnMos_d
++ N_XFULLADDER1/W4_Xfulladder1/Xinv1/MnMos_g N_GND_Xfulladder1/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.5e-13
++ AS=2.45e-13 PD=1.5e-06 PS=1.48e-06
+mXfulladder1/Xhalfadder2/XXOR1/MnMos7
++ N_noxref_35_Xfulladder1/Xhalfadder2/XXOR1/MnMos7_d
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder2/XXOR1/MnMos7_g
++ N_GND_Xfulladder1/Xhalfadder2/XXOR1/MnMos7_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder1/Xhalfadder2/XXOR1/MnMos8
++ N_noxref_35_Xfulladder1/Xhalfadder2/XXOR1/MnMos8_d
++ N_XFULLADDER1/XHALFADDER2/XXOR1/INV_Y_Xfulladder1/Xhalfadder2/XXOR1/MnMos8_g
++ N_GND_Xfulladder1/Xhalfadder2/XXOR1/MnMos8_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXfulladder1/Xnor1/MnMos3 N_XFULLADDER1/W4_Xfulladder1/Xnor1/MnMos3_d
++ N_XFULLADDER1/W2_Xfulladder1/Xnor1/MnMos3_g N_GND_Xfulladder1/Xnor1/MnMos3_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder1/Xnor1/MnMos4 N_XFULLADDER1/W4_Xfulladder1/Xnor1/MnMos4_d
++ N_XFULLADDER1/W3_Xfulladder1/Xnor1/MnMos4_g N_GND_Xfulladder1/Xnor1/MnMos4_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder1/Xhalfadder2/XXOR1/MnMos2
++ N_XFULLADDER1/XHALFADDER2/XXOR1/INV_Y_Xfulladder1/Xhalfadder2/XXOR1/MnMos2_d
++ N_C1_Xfulladder1/Xhalfadder2/XXOR1/MnMos2_g
++ N_GND_Xfulladder1/Xhalfadder2/XXOR1/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder2/Xhalfadder1/Xinv1/MnMos
++ N_XFULLADDER2/W2_Xfulladder2/Xhalfadder1/Xinv1/MnMos_d
++ N_XFULLADDER2/XHALFADDER1/W1_Xfulladder2/Xhalfadder1/Xinv1/MnMos_g
++ N_GND_Xfulladder2/Xhalfadder1/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder2/Xhalfadder1/XXOR1/MnMos1
++ N_XFULLADDER2/XHALFADDER1/XXOR1/INV_X_Xfulladder2/Xhalfadder1/XXOR1/MnMos1_d
++ N_A2_Xfulladder2/Xhalfadder1/XXOR1/MnMos1_g
++ N_GND_Xfulladder2/Xhalfadder1/XXOR1/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder2/Xhalfadder1/Xnand21/MnMos1
++ N_XFULLADDER2/XHALFADDER1/W1_Xfulladder2/Xhalfadder1/Xnand21/MnMos1_d
++ N_A2_Xfulladder2/Xhalfadder1/Xnand21/MnMos1_g
++ N_XFULLADDER2/XHALFADDER1/XNAND21/N1_S_Xfulladder2/Xhalfadder1/Xnand21/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXfulladder2/Xhalfadder1/XXOR1/MnMos10
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder1/XXOR1/MnMos10_d
++ N_B2_Xfulladder2/Xhalfadder1/XXOR1/MnMos10_g
++ N_noxref_38_Xfulladder2/Xhalfadder1/XXOR1/MnMos10_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+mXfulladder2/Xhalfadder1/XXOR1/MnMos9
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder1/XXOR1/MnMos9_d
++ N_XFULLADDER2/XHALFADDER1/XXOR1/INV_X_Xfulladder2/Xhalfadder1/XXOR1/MnMos9_g
++ N_noxref_38_Xfulladder2/Xhalfadder1/XXOR1/MnMos9_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder2/Xhalfadder1/Xnand21/MnMos2
++ N_XFULLADDER2/XHALFADDER1/XNAND21/N1_S_Xfulladder2/Xhalfadder1/Xnand21/MnMos2_d
++ N_B2_Xfulladder2/Xhalfadder1/Xnand21/MnMos2_g
++ N_GND_Xfulladder2/Xhalfadder1/Xnand21/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder2/Xhalfadder1/XXOR1/MnMos7
++ N_noxref_38_Xfulladder2/Xhalfadder1/XXOR1/MnMos7_d
++ N_A2_Xfulladder2/Xhalfadder1/XXOR1/MnMos7_g
++ N_GND_Xfulladder2/Xhalfadder1/XXOR1/MnMos7_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder2/Xhalfadder1/XXOR1/MnMos8
++ N_noxref_38_Xfulladder2/Xhalfadder1/XXOR1/MnMos8_d
++ N_XFULLADDER2/XHALFADDER1/XXOR1/INV_Y_Xfulladder2/Xhalfadder1/XXOR1/MnMos8_g
++ N_GND_Xfulladder2/Xhalfadder1/XXOR1/MnMos8_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXfulladder2/Xhalfadder2/Xinv1/MnMos
++ N_XFULLADDER2/W3_Xfulladder2/Xhalfadder2/Xinv1/MnMos_d
++ N_XFULLADDER2/XHALFADDER2/W1_Xfulladder2/Xhalfadder2/Xinv1/MnMos_g
++ N_GND_Xfulladder2/Xhalfadder2/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder2/Xhalfadder1/XXOR1/MnMos2
++ N_XFULLADDER2/XHALFADDER1/XXOR1/INV_Y_Xfulladder2/Xhalfadder1/XXOR1/MnMos2_d
++ N_B2_Xfulladder2/Xhalfadder1/XXOR1/MnMos2_g
++ N_GND_Xfulladder2/Xhalfadder1/XXOR1/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder2/Xhalfadder2/Xnand21/MnMos1
++ N_XFULLADDER2/XHALFADDER2/W1_Xfulladder2/Xhalfadder2/Xnand21/MnMos1_d
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder2/Xnand21/MnMos1_g
++ N_XFULLADDER2/XHALFADDER2/XNAND21/N1_S_Xfulladder2/Xhalfadder2/Xnand21/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXfulladder2/Xhalfadder2/XXOR1/MnMos1
++ N_XFULLADDER2/XHALFADDER2/XXOR1/INV_X_Xfulladder2/Xhalfadder2/XXOR1/MnMos1_d
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder2/XXOR1/MnMos1_g
++ N_GND_Xfulladder2/Xhalfadder2/XXOR1/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder2/Xhalfadder2/Xnand21/MnMos2
++ N_XFULLADDER2/XHALFADDER2/XNAND21/N1_S_Xfulladder2/Xhalfadder2/Xnand21/MnMos2_d
++ N_C2_Xfulladder2/Xhalfadder2/Xnand21/MnMos2_g
++ N_GND_Xfulladder2/Xhalfadder2/Xnand21/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder2/Xhalfadder2/XXOR1/MnMos10
++ N_S2_Xfulladder2/Xhalfadder2/XXOR1/MnMos10_d
++ N_C2_Xfulladder2/Xhalfadder2/XXOR1/MnMos10_g
++ N_noxref_41_Xfulladder2/Xhalfadder2/XXOR1/MnMos10_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+mXfulladder2/Xhalfadder2/XXOR1/MnMos9
++ N_S2_Xfulladder2/Xhalfadder2/XXOR1/MnMos9_d
++ N_XFULLADDER2/XHALFADDER2/XXOR1/INV_X_Xfulladder2/Xhalfadder2/XXOR1/MnMos9_g
++ N_noxref_41_Xfulladder2/Xhalfadder2/XXOR1/MnMos9_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder2/Xinv1/MnMos N_C3_Xfulladder2/Xinv1/MnMos_d
++ N_XFULLADDER2/W4_Xfulladder2/Xinv1/MnMos_g N_GND_Xfulladder2/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.5e-13
++ AS=2.45e-13 PD=1.5e-06 PS=1.48e-06
+mXfulladder2/Xhalfadder2/XXOR1/MnMos7
++ N_noxref_41_Xfulladder2/Xhalfadder2/XXOR1/MnMos7_d
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder2/XXOR1/MnMos7_g
++ N_GND_Xfulladder2/Xhalfadder2/XXOR1/MnMos7_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder2/Xhalfadder2/XXOR1/MnMos8
++ N_noxref_41_Xfulladder2/Xhalfadder2/XXOR1/MnMos8_d
++ N_XFULLADDER2/XHALFADDER2/XXOR1/INV_Y_Xfulladder2/Xhalfadder2/XXOR1/MnMos8_g
++ N_GND_Xfulladder2/Xhalfadder2/XXOR1/MnMos8_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXfulladder2/Xnor1/MnMos3 N_XFULLADDER2/W4_Xfulladder2/Xnor1/MnMos3_d
++ N_XFULLADDER2/W2_Xfulladder2/Xnor1/MnMos3_g N_GND_Xfulladder2/Xnor1/MnMos3_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder2/Xnor1/MnMos4 N_XFULLADDER2/W4_Xfulladder2/Xnor1/MnMos4_d
++ N_XFULLADDER2/W3_Xfulladder2/Xnor1/MnMos4_g N_GND_Xfulladder2/Xnor1/MnMos4_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder2/Xhalfadder2/XXOR1/MnMos2
++ N_XFULLADDER2/XHALFADDER2/XXOR1/INV_Y_Xfulladder2/Xhalfadder2/XXOR1/MnMos2_d
++ N_C2_Xfulladder2/Xhalfadder2/XXOR1/MnMos2_g
++ N_GND_Xfulladder2/Xhalfadder2/XXOR1/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder3/Xhalfadder1/Xinv1/MnMos
++ N_XFULLADDER3/W2_Xfulladder3/Xhalfadder1/Xinv1/MnMos_d
++ N_XFULLADDER3/XHALFADDER1/W1_Xfulladder3/Xhalfadder1/Xinv1/MnMos_g
++ N_GND_Xfulladder3/Xhalfadder1/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder3/Xhalfadder1/XXOR1/MnMos1
++ N_XFULLADDER3/XHALFADDER1/XXOR1/INV_X_Xfulladder3/Xhalfadder1/XXOR1/MnMos1_d
++ N_A3_Xfulladder3/Xhalfadder1/XXOR1/MnMos1_g
++ N_GND_Xfulladder3/Xhalfadder1/XXOR1/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder3/Xhalfadder1/Xnand21/MnMos1
++ N_XFULLADDER3/XHALFADDER1/W1_Xfulladder3/Xhalfadder1/Xnand21/MnMos1_d
++ N_A3_Xfulladder3/Xhalfadder1/Xnand21/MnMos1_g
++ N_XFULLADDER3/XHALFADDER1/XNAND21/N1_S_Xfulladder3/Xhalfadder1/Xnand21/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXfulladder3/Xhalfadder1/XXOR1/MnMos10
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder1/XXOR1/MnMos10_d
++ N_B3_Xfulladder3/Xhalfadder1/XXOR1/MnMos10_g
++ N_noxref_44_Xfulladder3/Xhalfadder1/XXOR1/MnMos10_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+mXfulladder3/Xhalfadder1/XXOR1/MnMos9
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder1/XXOR1/MnMos9_d
++ N_XFULLADDER3/XHALFADDER1/XXOR1/INV_X_Xfulladder3/Xhalfadder1/XXOR1/MnMos9_g
++ N_noxref_44_Xfulladder3/Xhalfadder1/XXOR1/MnMos9_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder3/Xhalfadder1/Xnand21/MnMos2
++ N_XFULLADDER3/XHALFADDER1/XNAND21/N1_S_Xfulladder3/Xhalfadder1/Xnand21/MnMos2_d
++ N_B3_Xfulladder3/Xhalfadder1/Xnand21/MnMos2_g
++ N_GND_Xfulladder3/Xhalfadder1/Xnand21/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder3/Xhalfadder1/XXOR1/MnMos7
++ N_noxref_44_Xfulladder3/Xhalfadder1/XXOR1/MnMos7_d
++ N_A3_Xfulladder3/Xhalfadder1/XXOR1/MnMos7_g
++ N_GND_Xfulladder3/Xhalfadder1/XXOR1/MnMos7_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder3/Xhalfadder1/XXOR1/MnMos8
++ N_noxref_44_Xfulladder3/Xhalfadder1/XXOR1/MnMos8_d
++ N_XFULLADDER3/XHALFADDER1/XXOR1/INV_Y_Xfulladder3/Xhalfadder1/XXOR1/MnMos8_g
++ N_GND_Xfulladder3/Xhalfadder1/XXOR1/MnMos8_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXfulladder3/Xhalfadder2/Xinv1/MnMos
++ N_XFULLADDER3/W3_Xfulladder3/Xhalfadder2/Xinv1/MnMos_d
++ N_XFULLADDER3/XHALFADDER2/W1_Xfulladder3/Xhalfadder2/Xinv1/MnMos_g
++ N_GND_Xfulladder3/Xhalfadder2/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder3/Xhalfadder1/XXOR1/MnMos2
++ N_XFULLADDER3/XHALFADDER1/XXOR1/INV_Y_Xfulladder3/Xhalfadder1/XXOR1/MnMos2_d
++ N_B3_Xfulladder3/Xhalfadder1/XXOR1/MnMos2_g
++ N_GND_Xfulladder3/Xhalfadder1/XXOR1/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder3/Xhalfadder2/Xnand21/MnMos1
++ N_XFULLADDER3/XHALFADDER2/W1_Xfulladder3/Xhalfadder2/Xnand21/MnMos1_d
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder2/Xnand21/MnMos1_g
++ N_XFULLADDER3/XHALFADDER2/XNAND21/N1_S_Xfulladder3/Xhalfadder2/Xnand21/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXfulladder3/Xhalfadder2/XXOR1/MnMos1
++ N_XFULLADDER3/XHALFADDER2/XXOR1/INV_X_Xfulladder3/Xhalfadder2/XXOR1/MnMos1_d
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder2/XXOR1/MnMos1_g
++ N_GND_Xfulladder3/Xhalfadder2/XXOR1/MnMos1_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder3/Xhalfadder2/Xnand21/MnMos2
++ N_XFULLADDER3/XHALFADDER2/XNAND21/N1_S_Xfulladder3/Xhalfadder2/Xnand21/MnMos2_d
++ N_C3_Xfulladder3/Xhalfadder2/Xnand21/MnMos2_g
++ N_GND_Xfulladder3/Xhalfadder2/Xnand21/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder3/Xhalfadder2/XXOR1/MnMos10
++ N_S3_Xfulladder3/Xhalfadder2/XXOR1/MnMos10_d
++ N_C3_Xfulladder3/Xhalfadder2/XXOR1/MnMos10_g
++ N_noxref_47_Xfulladder3/Xhalfadder2/XXOR1/MnMos10_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+mXfulladder3/Xhalfadder2/XXOR1/MnMos9
++ N_S3_Xfulladder3/Xhalfadder2/XXOR1/MnMos9_d
++ N_XFULLADDER3/XHALFADDER2/XXOR1/INV_X_Xfulladder3/Xhalfadder2/XXOR1/MnMos9_g
++ N_noxref_47_Xfulladder3/Xhalfadder2/XXOR1/MnMos9_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder3/Xinv1/MnMos N_C4_Xfulladder3/Xinv1/MnMos_d
++ N_XFULLADDER3/W4_Xfulladder3/Xinv1/MnMos_g N_GND_Xfulladder3/Xinv1/MnMos_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.5e-13
++ AS=2.45e-13 PD=1.5e-06 PS=1.48e-06
+mXfulladder3/Xhalfadder2/XXOR1/MnMos7
++ N_noxref_47_Xfulladder3/Xhalfadder2/XXOR1/MnMos7_d
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder2/XXOR1/MnMos7_g
++ N_GND_Xfulladder3/Xhalfadder2/XXOR1/MnMos7_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder3/Xhalfadder2/XXOR1/MnMos8
++ N_noxref_47_Xfulladder3/Xhalfadder2/XXOR1/MnMos8_d
++ N_XFULLADDER3/XHALFADDER2/XXOR1/INV_Y_Xfulladder3/Xhalfadder2/XXOR1/MnMos8_g
++ N_GND_Xfulladder3/Xhalfadder2/XXOR1/MnMos8_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXfulladder3/Xnor1/MnMos3 N_XFULLADDER3/W4_Xfulladder3/Xnor1/MnMos3_d
++ N_XFULLADDER3/W2_Xfulladder3/Xnor1/MnMos3_g N_GND_Xfulladder3/Xnor1/MnMos3_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder3/Xnor1/MnMos4 N_XFULLADDER3/W4_Xfulladder3/Xnor1/MnMos4_d
++ N_XFULLADDER3/W3_Xfulladder3/Xnor1/MnMos4_g N_GND_Xfulladder3/Xnor1/MnMos4_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=1.3e-13
++ AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXfulladder3/Xhalfadder2/XXOR1/MnMos2
++ N_XFULLADDER3/XHALFADDER2/XXOR1/INV_Y_Xfulladder3/Xhalfadder2/XXOR1/MnMos2_d
++ N_C3_Xfulladder3/Xhalfadder2/XXOR1/MnMos2_g
++ N_GND_Xfulladder3/Xhalfadder2/XXOR1/MnMos2_s
++ N_GND_Xfulladder0/Xhalfadder1/Xinv1/MnMos_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXfulladder0/Xhalfadder1/Xinv1/MpMos
++ N_XFULLADDER0/W2_Xfulladder0/Xhalfadder1/Xinv1/MpMos_d
++ N_XFULLADDER0/XHALFADDER1/W1_Xfulladder0/Xhalfadder1/Xinv1/MpMos_g
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder0/Xhalfadder1/XXOR1/MpMos1
++ N_XFULLADDER0/XHALFADDER1/XXOR1/INV_X_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_d
++ N_A0_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_g
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder0/Xhalfadder1/Xnand21/MpMos11
++ N_XFULLADDER0/XHALFADDER1/W1_Xfulladder0/Xhalfadder1/Xnand21/MpMos11_d
++ N_A0_Xfulladder0/Xhalfadder1/Xnand21/MpMos11_g
++ N_VDD_Xfulladder0/Xhalfadder1/Xnand21/MpMos11_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder0/Xhalfadder1/XXOR1/MpMos6
++ N_noxref_68_Xfulladder0/Xhalfadder1/XXOR1/MpMos6_d
++ N_B0_Xfulladder0/Xhalfadder1/XXOR1/MpMos6_g
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos6_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder0/Xhalfadder1/XXOR1/MpMos4
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder1/XXOR1/MpMos4_d
++ N_XFULLADDER0/XHALFADDER1/XXOR1/INV_X_Xfulladder0/Xhalfadder1/XXOR1/MpMos4_g
++ N_noxref_68_Xfulladder0/Xhalfadder1/XXOR1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder0/Xhalfadder1/Xnand21/MpMos12
++ N_XFULLADDER0/XHALFADDER1/W1_Xfulladder0/Xhalfadder1/Xnand21/MpMos12_d
++ N_B0_Xfulladder0/Xhalfadder1/Xnand21/MpMos12_g
++ N_VDD_Xfulladder0/Xhalfadder1/Xnand21/MpMos12_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder0/Xhalfadder1/XXOR1/MpMos3
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder1/XXOR1/MpMos3_d
++ N_A0_Xfulladder0/Xhalfadder1/XXOR1/MpMos3_g
++ N_noxref_69_Xfulladder0/Xhalfadder1/XXOR1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder0/Xhalfadder1/XXOR1/MpMos5
++ N_noxref_69_Xfulladder0/Xhalfadder1/XXOR1/MpMos5_d
++ N_XFULLADDER0/XHALFADDER1/XXOR1/INV_Y_Xfulladder0/Xhalfadder1/XXOR1/MpMos5_g
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos5_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder0/Xhalfadder2/Xinv1/MpMos
++ N_XFULLADDER0/W3_Xfulladder0/Xhalfadder2/Xinv1/MpMos_d
++ N_XFULLADDER0/XHALFADDER2/W1_Xfulladder0/Xhalfadder2/Xinv1/MpMos_g
++ N_VDD_Xfulladder0/Xhalfadder2/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder0/Xhalfadder1/XXOR1/MpMos2
++ N_XFULLADDER0/XHALFADDER1/XXOR1/INV_Y_Xfulladder0/Xhalfadder1/XXOR1/MpMos2_d
++ N_B0_Xfulladder0/Xhalfadder1/XXOR1/MpMos2_g
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos2_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder0/Xhalfadder2/Xnand21/MpMos11
++ N_XFULLADDER0/XHALFADDER2/W1_Xfulladder0/Xhalfadder2/Xnand21/MpMos11_d
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder2/Xnand21/MpMos11_g
++ N_VDD_Xfulladder0/Xhalfadder2/Xnand21/MpMos11_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder0/Xhalfadder2/XXOR1/MpMos1
++ N_XFULLADDER0/XHALFADDER2/XXOR1/INV_X_Xfulladder0/Xhalfadder2/XXOR1/MpMos1_d
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder2/XXOR1/MpMos1_g
++ N_VDD_Xfulladder0/Xhalfadder2/XXOR1/MpMos1_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder0/Xhalfadder2/Xnand21/MpMos12
++ N_XFULLADDER0/XHALFADDER2/W1_Xfulladder0/Xhalfadder2/Xnand21/MpMos12_d
++ N_C0_Xfulladder0/Xhalfadder2/Xnand21/MpMos12_g
++ N_VDD_Xfulladder0/Xhalfadder2/Xnand21/MpMos12_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder0/Xhalfadder2/XXOR1/MpMos6
++ N_noxref_70_Xfulladder0/Xhalfadder2/XXOR1/MpMos6_d
++ N_C0_Xfulladder0/Xhalfadder2/XXOR1/MpMos6_g
++ N_VDD_Xfulladder0/Xhalfadder2/XXOR1/MpMos6_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder0/Xhalfadder2/XXOR1/MpMos4
++ N_S0_Xfulladder0/Xhalfadder2/XXOR1/MpMos4_d
++ N_XFULLADDER0/XHALFADDER2/XXOR1/INV_X_Xfulladder0/Xhalfadder2/XXOR1/MpMos4_g
++ N_noxref_70_Xfulladder0/Xhalfadder2/XXOR1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder0/Xinv1/MpMos N_C1_Xfulladder0/Xinv1/MpMos_d
++ N_XFULLADDER0/W4_Xfulladder0/Xinv1/MpMos_g N_VDD_Xfulladder0/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder0/Xhalfadder2/XXOR1/MpMos3
++ N_S0_Xfulladder0/Xhalfadder2/XXOR1/MpMos3_d
++ N_XFULLADDER0/W1_Xfulladder0/Xhalfadder2/XXOR1/MpMos3_g
++ N_noxref_71_Xfulladder0/Xhalfadder2/XXOR1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder0/Xhalfadder2/XXOR1/MpMos5
++ N_noxref_71_Xfulladder0/Xhalfadder2/XXOR1/MpMos5_d
++ N_XFULLADDER0/XHALFADDER2/XXOR1/INV_Y_Xfulladder0/Xhalfadder2/XXOR1/MpMos5_g
++ N_VDD_Xfulladder0/Xhalfadder2/XXOR1/MpMos5_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder0/Xnor1/MpMos4 N_XFULLADDER0/W4_Xfulladder0/Xnor1/MpMos4_d
++ N_XFULLADDER0/W2_Xfulladder0/Xnor1/MpMos4_g
++ N_XFULLADDER0/XNOR1/P3_D_Xfulladder0/Xnor1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=2.6e-13 PD=1.98e-06 PS=5.2e-07
+mXfulladder0/Xnor1/MpMos3 N_XFULLADDER0/XNOR1/P3_D_Xfulladder0/Xnor1/MpMos3_d
++ N_XFULLADDER0/W3_Xfulladder0/Xnor1/MpMos3_g N_VDD_Xfulladder0/Xnor1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder0/Xhalfadder2/XXOR1/MpMos2
++ N_XFULLADDER0/XHALFADDER2/XXOR1/INV_Y_Xfulladder0/Xhalfadder2/XXOR1/MpMos2_d
++ N_C0_Xfulladder0/Xhalfadder2/XXOR1/MpMos2_g
++ N_VDD_Xfulladder0/Xhalfadder2/XXOR1/MpMos2_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder1/Xhalfadder1/Xinv1/MpMos
++ N_XFULLADDER1/W2_Xfulladder1/Xhalfadder1/Xinv1/MpMos_d
++ N_XFULLADDER1/XHALFADDER1/W1_Xfulladder1/Xhalfadder1/Xinv1/MpMos_g
++ N_VDD_Xfulladder1/Xhalfadder1/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder1/Xhalfadder1/XXOR1/MpMos1
++ N_XFULLADDER1/XHALFADDER1/XXOR1/INV_X_Xfulladder1/Xhalfadder1/XXOR1/MpMos1_d
++ N_A1_Xfulladder1/Xhalfadder1/XXOR1/MpMos1_g
++ N_VDD_Xfulladder1/Xhalfadder1/XXOR1/MpMos1_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder1/Xhalfadder1/Xnand21/MpMos11
++ N_XFULLADDER1/XHALFADDER1/W1_Xfulladder1/Xhalfadder1/Xnand21/MpMos11_d
++ N_A1_Xfulladder1/Xhalfadder1/Xnand21/MpMos11_g
++ N_VDD_Xfulladder1/Xhalfadder1/Xnand21/MpMos11_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder1/Xhalfadder1/XXOR1/MpMos6
++ N_noxref_73_Xfulladder1/Xhalfadder1/XXOR1/MpMos6_d
++ N_B1_Xfulladder1/Xhalfadder1/XXOR1/MpMos6_g
++ N_VDD_Xfulladder1/Xhalfadder1/XXOR1/MpMos6_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder1/Xhalfadder1/XXOR1/MpMos4
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder1/XXOR1/MpMos4_d
++ N_XFULLADDER1/XHALFADDER1/XXOR1/INV_X_Xfulladder1/Xhalfadder1/XXOR1/MpMos4_g
++ N_noxref_73_Xfulladder1/Xhalfadder1/XXOR1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder1/Xhalfadder1/Xnand21/MpMos12
++ N_XFULLADDER1/XHALFADDER1/W1_Xfulladder1/Xhalfadder1/Xnand21/MpMos12_d
++ N_B1_Xfulladder1/Xhalfadder1/Xnand21/MpMos12_g
++ N_VDD_Xfulladder1/Xhalfadder1/Xnand21/MpMos12_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder1/Xhalfadder1/XXOR1/MpMos3
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder1/XXOR1/MpMos3_d
++ N_A1_Xfulladder1/Xhalfadder1/XXOR1/MpMos3_g
++ N_noxref_74_Xfulladder1/Xhalfadder1/XXOR1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder1/Xhalfadder1/XXOR1/MpMos5
++ N_noxref_74_Xfulladder1/Xhalfadder1/XXOR1/MpMos5_d
++ N_XFULLADDER1/XHALFADDER1/XXOR1/INV_Y_Xfulladder1/Xhalfadder1/XXOR1/MpMos5_g
++ N_VDD_Xfulladder1/Xhalfadder1/XXOR1/MpMos5_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder1/Xhalfadder2/Xinv1/MpMos
++ N_XFULLADDER1/W3_Xfulladder1/Xhalfadder2/Xinv1/MpMos_d
++ N_XFULLADDER1/XHALFADDER2/W1_Xfulladder1/Xhalfadder2/Xinv1/MpMos_g
++ N_VDD_Xfulladder1/Xhalfadder2/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder1/Xhalfadder1/XXOR1/MpMos2
++ N_XFULLADDER1/XHALFADDER1/XXOR1/INV_Y_Xfulladder1/Xhalfadder1/XXOR1/MpMos2_d
++ N_B1_Xfulladder1/Xhalfadder1/XXOR1/MpMos2_g
++ N_VDD_Xfulladder1/Xhalfadder1/XXOR1/MpMos2_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder1/Xhalfadder2/Xnand21/MpMos11
++ N_XFULLADDER1/XHALFADDER2/W1_Xfulladder1/Xhalfadder2/Xnand21/MpMos11_d
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder2/Xnand21/MpMos11_g
++ N_VDD_Xfulladder1/Xhalfadder2/Xnand21/MpMos11_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder1/Xhalfadder2/XXOR1/MpMos1
++ N_XFULLADDER1/XHALFADDER2/XXOR1/INV_X_Xfulladder1/Xhalfadder2/XXOR1/MpMos1_d
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder2/XXOR1/MpMos1_g
++ N_VDD_Xfulladder1/Xhalfadder2/XXOR1/MpMos1_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder1/Xhalfadder2/Xnand21/MpMos12
++ N_XFULLADDER1/XHALFADDER2/W1_Xfulladder1/Xhalfadder2/Xnand21/MpMos12_d
++ N_C1_Xfulladder1/Xhalfadder2/Xnand21/MpMos12_g
++ N_VDD_Xfulladder1/Xhalfadder2/Xnand21/MpMos12_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder1/Xhalfadder2/XXOR1/MpMos6
++ N_noxref_75_Xfulladder1/Xhalfadder2/XXOR1/MpMos6_d
++ N_C1_Xfulladder1/Xhalfadder2/XXOR1/MpMos6_g
++ N_VDD_Xfulladder1/Xhalfadder2/XXOR1/MpMos6_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder1/Xhalfadder2/XXOR1/MpMos4
++ N_S1_Xfulladder1/Xhalfadder2/XXOR1/MpMos4_d
++ N_XFULLADDER1/XHALFADDER2/XXOR1/INV_X_Xfulladder1/Xhalfadder2/XXOR1/MpMos4_g
++ N_noxref_75_Xfulladder1/Xhalfadder2/XXOR1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder1/Xinv1/MpMos N_C2_Xfulladder1/Xinv1/MpMos_d
++ N_XFULLADDER1/W4_Xfulladder1/Xinv1/MpMos_g N_VDD_Xfulladder1/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder1/Xhalfadder2/XXOR1/MpMos3
++ N_S1_Xfulladder1/Xhalfadder2/XXOR1/MpMos3_d
++ N_XFULLADDER1/W1_Xfulladder1/Xhalfadder2/XXOR1/MpMos3_g
++ N_noxref_76_Xfulladder1/Xhalfadder2/XXOR1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder1/Xhalfadder2/XXOR1/MpMos5
++ N_noxref_76_Xfulladder1/Xhalfadder2/XXOR1/MpMos5_d
++ N_XFULLADDER1/XHALFADDER2/XXOR1/INV_Y_Xfulladder1/Xhalfadder2/XXOR1/MpMos5_g
++ N_VDD_Xfulladder1/Xhalfadder2/XXOR1/MpMos5_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder1/Xnor1/MpMos4 N_XFULLADDER1/W4_Xfulladder1/Xnor1/MpMos4_d
++ N_XFULLADDER1/W2_Xfulladder1/Xnor1/MpMos4_g
++ N_XFULLADDER1/XNOR1/P3_D_Xfulladder1/Xnor1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=2.6e-13 PD=1.98e-06 PS=5.2e-07
+mXfulladder1/Xnor1/MpMos3 N_XFULLADDER1/XNOR1/P3_D_Xfulladder1/Xnor1/MpMos3_d
++ N_XFULLADDER1/W3_Xfulladder1/Xnor1/MpMos3_g N_VDD_Xfulladder1/Xnor1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder1/Xhalfadder2/XXOR1/MpMos2
++ N_XFULLADDER1/XHALFADDER2/XXOR1/INV_Y_Xfulladder1/Xhalfadder2/XXOR1/MpMos2_d
++ N_C1_Xfulladder1/Xhalfadder2/XXOR1/MpMos2_g
++ N_VDD_Xfulladder1/Xhalfadder2/XXOR1/MpMos2_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder2/Xhalfadder1/Xinv1/MpMos
++ N_XFULLADDER2/W2_Xfulladder2/Xhalfadder1/Xinv1/MpMos_d
++ N_XFULLADDER2/XHALFADDER1/W1_Xfulladder2/Xhalfadder1/Xinv1/MpMos_g
++ N_VDD_Xfulladder2/Xhalfadder1/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder2/Xhalfadder1/XXOR1/MpMos1
++ N_XFULLADDER2/XHALFADDER1/XXOR1/INV_X_Xfulladder2/Xhalfadder1/XXOR1/MpMos1_d
++ N_A2_Xfulladder2/Xhalfadder1/XXOR1/MpMos1_g
++ N_VDD_Xfulladder2/Xhalfadder1/XXOR1/MpMos1_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder2/Xhalfadder1/Xnand21/MpMos11
++ N_XFULLADDER2/XHALFADDER1/W1_Xfulladder2/Xhalfadder1/Xnand21/MpMos11_d
++ N_A2_Xfulladder2/Xhalfadder1/Xnand21/MpMos11_g
++ N_VDD_Xfulladder2/Xhalfadder1/Xnand21/MpMos11_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder2/Xhalfadder1/XXOR1/MpMos6
++ N_noxref_78_Xfulladder2/Xhalfadder1/XXOR1/MpMos6_d
++ N_B2_Xfulladder2/Xhalfadder1/XXOR1/MpMos6_g
++ N_VDD_Xfulladder2/Xhalfadder1/XXOR1/MpMos6_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder2/Xhalfadder1/XXOR1/MpMos4
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder1/XXOR1/MpMos4_d
++ N_XFULLADDER2/XHALFADDER1/XXOR1/INV_X_Xfulladder2/Xhalfadder1/XXOR1/MpMos4_g
++ N_noxref_78_Xfulladder2/Xhalfadder1/XXOR1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder2/Xhalfadder1/Xnand21/MpMos12
++ N_XFULLADDER2/XHALFADDER1/W1_Xfulladder2/Xhalfadder1/Xnand21/MpMos12_d
++ N_B2_Xfulladder2/Xhalfadder1/Xnand21/MpMos12_g
++ N_VDD_Xfulladder2/Xhalfadder1/Xnand21/MpMos12_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder2/Xhalfadder1/XXOR1/MpMos3
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder1/XXOR1/MpMos3_d
++ N_A2_Xfulladder2/Xhalfadder1/XXOR1/MpMos3_g
++ N_noxref_79_Xfulladder2/Xhalfadder1/XXOR1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder2/Xhalfadder1/XXOR1/MpMos5
++ N_noxref_79_Xfulladder2/Xhalfadder1/XXOR1/MpMos5_d
++ N_XFULLADDER2/XHALFADDER1/XXOR1/INV_Y_Xfulladder2/Xhalfadder1/XXOR1/MpMos5_g
++ N_VDD_Xfulladder2/Xhalfadder1/XXOR1/MpMos5_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder2/Xhalfadder2/Xinv1/MpMos
++ N_XFULLADDER2/W3_Xfulladder2/Xhalfadder2/Xinv1/MpMos_d
++ N_XFULLADDER2/XHALFADDER2/W1_Xfulladder2/Xhalfadder2/Xinv1/MpMos_g
++ N_VDD_Xfulladder2/Xhalfadder2/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder2/Xhalfadder1/XXOR1/MpMos2
++ N_XFULLADDER2/XHALFADDER1/XXOR1/INV_Y_Xfulladder2/Xhalfadder1/XXOR1/MpMos2_d
++ N_B2_Xfulladder2/Xhalfadder1/XXOR1/MpMos2_g
++ N_VDD_Xfulladder2/Xhalfadder1/XXOR1/MpMos2_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder2/Xhalfadder2/Xnand21/MpMos11
++ N_XFULLADDER2/XHALFADDER2/W1_Xfulladder2/Xhalfadder2/Xnand21/MpMos11_d
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder2/Xnand21/MpMos11_g
++ N_VDD_Xfulladder2/Xhalfadder2/Xnand21/MpMos11_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder2/Xhalfadder2/XXOR1/MpMos1
++ N_XFULLADDER2/XHALFADDER2/XXOR1/INV_X_Xfulladder2/Xhalfadder2/XXOR1/MpMos1_d
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder2/XXOR1/MpMos1_g
++ N_VDD_Xfulladder2/Xhalfadder2/XXOR1/MpMos1_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder2/Xhalfadder2/Xnand21/MpMos12
++ N_XFULLADDER2/XHALFADDER2/W1_Xfulladder2/Xhalfadder2/Xnand21/MpMos12_d
++ N_C2_Xfulladder2/Xhalfadder2/Xnand21/MpMos12_g
++ N_VDD_Xfulladder2/Xhalfadder2/Xnand21/MpMos12_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder2/Xhalfadder2/XXOR1/MpMos6
++ N_noxref_80_Xfulladder2/Xhalfadder2/XXOR1/MpMos6_d
++ N_C2_Xfulladder2/Xhalfadder2/XXOR1/MpMos6_g
++ N_VDD_Xfulladder2/Xhalfadder2/XXOR1/MpMos6_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder2/Xhalfadder2/XXOR1/MpMos4
++ N_S2_Xfulladder2/Xhalfadder2/XXOR1/MpMos4_d
++ N_XFULLADDER2/XHALFADDER2/XXOR1/INV_X_Xfulladder2/Xhalfadder2/XXOR1/MpMos4_g
++ N_noxref_80_Xfulladder2/Xhalfadder2/XXOR1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder2/Xinv1/MpMos N_C3_Xfulladder2/Xinv1/MpMos_d
++ N_XFULLADDER2/W4_Xfulladder2/Xinv1/MpMos_g N_VDD_Xfulladder2/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder2/Xhalfadder2/XXOR1/MpMos3
++ N_S2_Xfulladder2/Xhalfadder2/XXOR1/MpMos3_d
++ N_XFULLADDER2/W1_Xfulladder2/Xhalfadder2/XXOR1/MpMos3_g
++ N_noxref_81_Xfulladder2/Xhalfadder2/XXOR1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder2/Xhalfadder2/XXOR1/MpMos5
++ N_noxref_81_Xfulladder2/Xhalfadder2/XXOR1/MpMos5_d
++ N_XFULLADDER2/XHALFADDER2/XXOR1/INV_Y_Xfulladder2/Xhalfadder2/XXOR1/MpMos5_g
++ N_VDD_Xfulladder2/Xhalfadder2/XXOR1/MpMos5_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder2/Xnor1/MpMos4 N_XFULLADDER2/W4_Xfulladder2/Xnor1/MpMos4_d
++ N_XFULLADDER2/W2_Xfulladder2/Xnor1/MpMos4_g
++ N_XFULLADDER2/XNOR1/P3_D_Xfulladder2/Xnor1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=2.6e-13 PD=1.98e-06 PS=5.2e-07
+mXfulladder2/Xnor1/MpMos3 N_XFULLADDER2/XNOR1/P3_D_Xfulladder2/Xnor1/MpMos3_d
++ N_XFULLADDER2/W3_Xfulladder2/Xnor1/MpMos3_g N_VDD_Xfulladder2/Xnor1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder2/Xhalfadder2/XXOR1/MpMos2
++ N_XFULLADDER2/XHALFADDER2/XXOR1/INV_Y_Xfulladder2/Xhalfadder2/XXOR1/MpMos2_d
++ N_C2_Xfulladder2/Xhalfadder2/XXOR1/MpMos2_g
++ N_VDD_Xfulladder2/Xhalfadder2/XXOR1/MpMos2_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder3/Xhalfadder1/Xinv1/MpMos
++ N_XFULLADDER3/W2_Xfulladder3/Xhalfadder1/Xinv1/MpMos_d
++ N_XFULLADDER3/XHALFADDER1/W1_Xfulladder3/Xhalfadder1/Xinv1/MpMos_g
++ N_VDD_Xfulladder3/Xhalfadder1/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder3/Xhalfadder1/XXOR1/MpMos1
++ N_XFULLADDER3/XHALFADDER1/XXOR1/INV_X_Xfulladder3/Xhalfadder1/XXOR1/MpMos1_d
++ N_A3_Xfulladder3/Xhalfadder1/XXOR1/MpMos1_g
++ N_VDD_Xfulladder3/Xhalfadder1/XXOR1/MpMos1_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder3/Xhalfadder1/Xnand21/MpMos11
++ N_XFULLADDER3/XHALFADDER1/W1_Xfulladder3/Xhalfadder1/Xnand21/MpMos11_d
++ N_A3_Xfulladder3/Xhalfadder1/Xnand21/MpMos11_g
++ N_VDD_Xfulladder3/Xhalfadder1/Xnand21/MpMos11_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder3/Xhalfadder1/XXOR1/MpMos6
++ N_noxref_83_Xfulladder3/Xhalfadder1/XXOR1/MpMos6_d
++ N_B3_Xfulladder3/Xhalfadder1/XXOR1/MpMos6_g
++ N_VDD_Xfulladder3/Xhalfadder1/XXOR1/MpMos6_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder3/Xhalfadder1/XXOR1/MpMos4
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder1/XXOR1/MpMos4_d
++ N_XFULLADDER3/XHALFADDER1/XXOR1/INV_X_Xfulladder3/Xhalfadder1/XXOR1/MpMos4_g
++ N_noxref_83_Xfulladder3/Xhalfadder1/XXOR1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder3/Xhalfadder1/Xnand21/MpMos12
++ N_XFULLADDER3/XHALFADDER1/W1_Xfulladder3/Xhalfadder1/Xnand21/MpMos12_d
++ N_B3_Xfulladder3/Xhalfadder1/Xnand21/MpMos12_g
++ N_VDD_Xfulladder3/Xhalfadder1/Xnand21/MpMos12_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder3/Xhalfadder1/XXOR1/MpMos3
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder1/XXOR1/MpMos3_d
++ N_A3_Xfulladder3/Xhalfadder1/XXOR1/MpMos3_g
++ N_noxref_84_Xfulladder3/Xhalfadder1/XXOR1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder3/Xhalfadder1/XXOR1/MpMos5
++ N_noxref_84_Xfulladder3/Xhalfadder1/XXOR1/MpMos5_d
++ N_XFULLADDER3/XHALFADDER1/XXOR1/INV_Y_Xfulladder3/Xhalfadder1/XXOR1/MpMos5_g
++ N_VDD_Xfulladder3/Xhalfadder1/XXOR1/MpMos5_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder3/Xhalfadder2/Xinv1/MpMos
++ N_XFULLADDER3/W3_Xfulladder3/Xhalfadder2/Xinv1/MpMos_d
++ N_XFULLADDER3/XHALFADDER2/W1_Xfulladder3/Xhalfadder2/Xinv1/MpMos_g
++ N_VDD_Xfulladder3/Xhalfadder2/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder3/Xhalfadder1/XXOR1/MpMos2
++ N_XFULLADDER3/XHALFADDER1/XXOR1/INV_Y_Xfulladder3/Xhalfadder1/XXOR1/MpMos2_d
++ N_B3_Xfulladder3/Xhalfadder1/XXOR1/MpMos2_g
++ N_VDD_Xfulladder3/Xhalfadder1/XXOR1/MpMos2_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder3/Xhalfadder2/Xnand21/MpMos11
++ N_XFULLADDER3/XHALFADDER2/W1_Xfulladder3/Xhalfadder2/Xnand21/MpMos11_d
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder2/Xnand21/MpMos11_g
++ N_VDD_Xfulladder3/Xhalfadder2/Xnand21/MpMos11_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder3/Xhalfadder2/XXOR1/MpMos1
++ N_XFULLADDER3/XHALFADDER2/XXOR1/INV_X_Xfulladder3/Xhalfadder2/XXOR1/MpMos1_d
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder2/XXOR1/MpMos1_g
++ N_VDD_Xfulladder3/Xhalfadder2/XXOR1/MpMos1_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder3/Xhalfadder2/Xnand21/MpMos12
++ N_XFULLADDER3/XHALFADDER2/W1_Xfulladder3/Xhalfadder2/Xnand21/MpMos12_d
++ N_C3_Xfulladder3/Xhalfadder2/Xnand21/MpMos12_g
++ N_VDD_Xfulladder3/Xhalfadder2/Xnand21/MpMos12_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder3/Xhalfadder2/XXOR1/MpMos6
++ N_noxref_85_Xfulladder3/Xhalfadder2/XXOR1/MpMos6_d
++ N_C3_Xfulladder3/Xhalfadder2/XXOR1/MpMos6_g
++ N_VDD_Xfulladder3/Xhalfadder2/XXOR1/MpMos6_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder3/Xhalfadder2/XXOR1/MpMos4
++ N_S3_Xfulladder3/Xhalfadder2/XXOR1/MpMos4_d
++ N_XFULLADDER3/XHALFADDER2/XXOR1/INV_X_Xfulladder3/Xhalfadder2/XXOR1/MpMos4_g
++ N_noxref_85_Xfulladder3/Xhalfadder2/XXOR1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder3/Xinv1/MpMos N_C4_Xfulladder3/Xinv1/MpMos_d
++ N_XFULLADDER3/W4_Xfulladder3/Xinv1/MpMos_g N_VDD_Xfulladder3/Xinv1/MpMos_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXfulladder3/Xhalfadder2/XXOR1/MpMos3
++ N_S3_Xfulladder3/Xhalfadder2/XXOR1/MpMos3_d
++ N_XFULLADDER3/W1_Xfulladder3/Xhalfadder2/XXOR1/MpMos3_g
++ N_noxref_86_Xfulladder3/Xhalfadder2/XXOR1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXfulladder3/Xhalfadder2/XXOR1/MpMos5
++ N_noxref_86_Xfulladder3/Xhalfadder2/XXOR1/MpMos5_d
++ N_XFULLADDER3/XHALFADDER2/XXOR1/INV_Y_Xfulladder3/Xhalfadder2/XXOR1/MpMos5_g
++ N_VDD_Xfulladder3/Xhalfadder2/XXOR1/MpMos5_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXfulladder3/Xnor1/MpMos4 N_XFULLADDER3/W4_Xfulladder3/Xnor1/MpMos4_d
++ N_XFULLADDER3/W2_Xfulladder3/Xnor1/MpMos4_g
++ N_XFULLADDER3/XNOR1/P3_D_Xfulladder3/Xnor1/MpMos4_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=2.6e-13 PD=1.98e-06 PS=5.2e-07
+mXfulladder3/Xnor1/MpMos3 N_XFULLADDER3/XNOR1/P3_D_Xfulladder3/Xnor1/MpMos3_d
++ N_XFULLADDER3/W3_Xfulladder3/Xnor1/MpMos3_g N_VDD_Xfulladder3/Xnor1/MpMos3_s
++ N_VDD_Xfulladder0/Xhalfadder1/Xinv1/MpMos_b P_18 L=1.8e-07 W=1e-06 AD=2.6e-13
++ AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXfulladder3/Xhalfadder2/XXOR1/MpMos2
++ N_XFULLADDER3/XHALFADDER2/XXOR1/INV_Y_Xfulladder3/Xhalfadder2/XXOR1/MpMos2_d
++ N_C3_Xfulladder3/Xhalfadder2/XXOR1/MpMos2_g
++ N_VDD_Xfulladder3/Xhalfadder2/XXOR1/MpMos2_s
++ N_VDD_Xfulladder0/Xhalfadder1/XXOR1/MpMos1_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+*
+.include "RCA.pex.netlist.RCA.pxi"
+*
+.ends
+*
+*

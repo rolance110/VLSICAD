@@ -1,0 +1,23 @@
+***XOR***
+.subckt   xor  X Y  F  VDD  GND
+
+MnMos1   inv_X  X  gnd  gnd  n_18  W=0.5u  L=180n
+MpMos1   inv_X  X  vdd  vdd  p_18  W=1u    L=180n 
+
+MnMos2   inv_Y  Y  gnd  gnd  n_18  W=0.5u  L=180n
+MpMos2   inv_Y  Y  vdd  vdd  p_18  W=1u    L=180n 
+
+MpMos3   w1  X      vdd  vdd   p_18  W=1u  L=180n 
+MpMos4   w2  inv_X  vdd  vdd   p_18  W=1u  L=180n 
+MpMos5   F   inv_Y  w1   vdd   p_18  W=1u  L=180n 
+MpMos6   F   Y      w2   vdd   p_18  W=1u  L=180n
+
+MnMos7   F   X      w3   gnd  n_18  W=0.5u  L=180n
+MnMos8   F   inv_Y  w3   gnd  n_18  W=0.5u  L=180n
+MnMos9   w3  inv_X  gnd  gnd  n_18  W=0.5u  L=180n
+MnMos10  w3  Y      gnd  gnd  n_18  W=0.5u  L=180n
+ 
+
+.ends
+
+

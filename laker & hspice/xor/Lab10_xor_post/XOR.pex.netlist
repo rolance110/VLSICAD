@@ -1,0 +1,43 @@
+* File: XOR.pex.netlist
+* Created: Wed May 17 19:55:02 2023
+* Program "Calibre xRC"
+* Version "v2017.4_19.14"
+* 
+.include "XOR.pex.netlist.pex"
+.subckt xor  Y X F VDD GND
+* 
+* GND	GND
+* VDD	VDD
+* F	F
+* X	X
+* Y	Y
+MnMos2 N_INV_Y_MnMos2_d N_Y_MnMos2_g N_GND_MnMos2_s N_GND_MnMos2_b N_18
++ L=1.8e-07 W=5e-07 AD=2.45e-13 AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+MnMos7 N_F_MnMos7_d N_X_MnMos7_g N_noxref_3_MnMos7_s N_GND_MnMos2_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13 PD=5.1e-07 PS=1.48e-06
+MnMos8 N_F_MnMos8_d N_INV_Y_MnMos8_g N_noxref_3_MnMos8_s N_GND_MnMos2_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+MnMos10 N_noxref_3_MnMos10_d N_Y_MnMos10_g N_GND_MnMos10_s N_GND_MnMos2_b N_18
++ L=1.8e-07 W=5e-07 AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+MnMos9 N_noxref_3_MnMos9_d N_INV_X_MnMos9_g N_GND_MnMos9_s N_GND_MnMos2_b N_18
++ L=1.8e-07 W=5e-07 AD=2.45e-13 AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+MnMos1 N_INV_X_MnMos1_d N_X_MnMos1_g N_GND_MnMos1_s N_GND_MnMos2_b N_18
++ L=1.8e-07 W=5e-07 AD=2.45e-13 AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+MpMos2 N_INV_Y_MpMos2_d N_Y_MpMos2_g N_VDD_MpMos2_s N_VDD_MpMos2_b P_18
++ L=1.8e-07 W=1e-06 AD=4.9e-13 AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+MpMos3 N_noxref_9_MpMos3_d N_X_MpMos3_g N_VDD_MpMos3_s N_VDD_MpMos2_b P_18
++ L=1.8e-07 W=1e-06 AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+MpMos5 N_F_MpMos5_d N_INV_Y_MpMos5_g N_noxref_9_MpMos5_s N_VDD_MpMos2_b P_18
++ L=1.8e-07 W=1e-06 AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+MpMos6 N_F_MpMos6_d N_Y_MpMos6_g N_noxref_10_MpMos6_s N_VDD_MpMos2_b P_18
++ L=1.8e-07 W=1e-06 AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+MpMos4 N_noxref_10_MpMos4_d N_INV_X_MpMos4_g N_VDD_MpMos4_s N_VDD_MpMos2_b P_18
++ L=1.8e-07 W=1e-06 AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+MpMos1 N_INV_X_MpMos1_d N_X_MpMos1_g N_VDD_MpMos1_s N_VDD_MpMos2_b P_18
++ L=1.8e-07 W=1e-06 AD=4.9e-13 AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+*
+.include "XOR.pex.netlist.XOR.pxi"
+*
+.ends
+*
+*

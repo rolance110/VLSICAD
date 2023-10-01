@@ -1,0 +1,74 @@
+* File: halfadder.pex.netlist
+* Created: Fri May 19 20:10:31 2023
+* Program "Calibre xRC"
+* Version "v2017.4_19.14"
+* 
+.include "halfadder.pex.netlist.pex"
+.subckt halfadder  X Y S C  VDD  GND
+* 
+* VDD	VDD
+* GND	GND
+* C	C
+* S	S
+* X	X
+* Y	Y
+mXnand21/MnMos1 N_XNAND21/N1_S_Xnand21/MnMos1_d N_X_Xnand21/MnMos1_g
++ N_GND_Xnand21/MnMos1_s N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07
++ AD=1.3e-13 AS=2.45e-13 PD=5.2e-07 PS=1.48e-06
+mXnand21/MnMos2 N_W1_Xnand21/MnMos2_d N_Y_Xnand21/MnMos2_g
++ N_XNAND21/N1_S_Xnand21/MnMos2_s N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07
++ AD=2.45e-13 AS=1.3e-13 PD=1.48e-06 PS=5.2e-07
+mXinv1/MnMos N_C_Xinv1/MnMos_d N_W1_Xinv1/MnMos_g N_GND_Xinv1/MnMos_s
++ N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13 AS=2.45e-13
++ PD=1.48e-06 PS=1.48e-06
+mXXOR1/MnMos2 N_XXOR1/INV_Y_XXOR1/MnMos2_d N_Y_XXOR1/MnMos2_g
++ N_GND_XXOR1/MnMos2_s N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXXOR1/MnMos7 N_S_XXOR1/MnMos7_d N_X_XXOR1/MnMos7_g N_noxref_2_XXOR1/MnMos7_s
++ N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07 AD=1.275e-13 AS=2.45e-13
++ PD=5.1e-07 PS=1.48e-06
+mXXOR1/MnMos8 N_S_XXOR1/MnMos8_d N_XXOR1/INV_Y_XXOR1/MnMos8_g
++ N_noxref_2_XXOR1/MnMos8_s N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXXOR1/MnMos10 N_noxref_2_XXOR1/MnMos10_d N_Y_XXOR1/MnMos10_g
++ N_GND_XXOR1/MnMos10_s N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07
++ AD=1.275e-13 AS=1.275e-13 PD=5.1e-07 PS=5.1e-07
+mXXOR1/MnMos9 N_noxref_2_XXOR1/MnMos9_d N_XXOR1/INV_X_XXOR1/MnMos9_g
++ N_GND_XXOR1/MnMos9_s N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=1.275e-13 PD=1.48e-06 PS=5.1e-07
+mXXOR1/MnMos1 N_XXOR1/INV_X_XXOR1/MnMos1_d N_X_XXOR1/MnMos1_g
++ N_GND_XXOR1/MnMos1_s N_GND_Xnand21/MnMos1_b N_18 L=1.8e-07 W=5e-07 AD=2.45e-13
++ AS=2.45e-13 PD=1.48e-06 PS=1.48e-06
+mXnand21/MpMos11 N_W1_Xnand21/MpMos11_d N_X_Xnand21/MpMos11_g
++ N_VDD_Xnand21/MpMos11_s N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06
++ AD=2.6e-13 AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXnand21/MpMos12 N_W1_Xnand21/MpMos12_d N_Y_Xnand21/MpMos12_g
++ N_VDD_Xnand21/MpMos12_s N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06
++ AD=2.6e-13 AS=4.9e-13 PD=5.2e-07 PS=1.98e-06
+mXinv1/MpMos N_C_Xinv1/MpMos_d N_W1_Xinv1/MpMos_g N_VDD_Xinv1/MpMos_s
++ N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13 AS=4.9e-13
++ PD=1.98e-06 PS=1.98e-06
+mXXOR1/MpMos2 N_XXOR1/INV_Y_XXOR1/MpMos2_d N_Y_XXOR1/MpMos2_g
++ N_VDD_XXOR1/MpMos2_s N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+mXXOR1/MpMos3 N_noxref_11_XXOR1/MpMos3_d N_X_XXOR1/MpMos3_g N_VDD_XXOR1/MpMos3_s
++ N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06 AD=2.55e-13 AS=4.9e-13
++ PD=5.1e-07 PS=1.98e-06
+mXXOR1/MpMos5 N_S_XXOR1/MpMos5_d N_XXOR1/INV_Y_XXOR1/MpMos5_g
++ N_noxref_11_XXOR1/MpMos5_s N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=2.55e-13 PD=5.1e-07 PS=5.1e-07
+mXXOR1/MpMos6 N_S_XXOR1/MpMos6_d N_Y_XXOR1/MpMos6_g N_noxref_12_XXOR1/MpMos6_s
++ N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06 AD=2.55e-13 AS=2.55e-13
++ PD=5.1e-07 PS=5.1e-07
+mXXOR1/MpMos4 N_noxref_12_XXOR1/MpMos4_d N_XXOR1/INV_X_XXOR1/MpMos4_g
++ N_VDD_XXOR1/MpMos4_s N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06
++ AD=2.55e-13 AS=4.9e-13 PD=5.1e-07 PS=1.98e-06
+mXXOR1/MpMos1 N_XXOR1/INV_X_XXOR1/MpMos1_d N_X_XXOR1/MpMos1_g
++ N_VDD_XXOR1/MpMos1_s N_VDD_Xnand21/MpMos11_b P_18 L=1.8e-07 W=1e-06 AD=4.9e-13
++ AS=4.9e-13 PD=1.98e-06 PS=1.98e-06
+*
+.include "halfadder.pex.netlist.HALFADDER.pxi"
+*
+.ends
+*
+*

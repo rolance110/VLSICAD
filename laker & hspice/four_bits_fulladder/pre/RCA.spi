@@ -1,0 +1,79 @@
+***fourbitsadder***
+.subckt   fourbitsadder  A0 B0 C0 A1 B1 A2 B2 A3 B3 C4 S0 S1 S2 S3  VDD  GND
+
+Xfulladder0 A0 B0  C0 S0  C1 VDD  GND      fulladder
+Xfulladder1 A1 B1  C1 S1  C2 VDD  GND      fulladder
+Xfulladder2 A2 B2  C2 S2  C3 VDD  GND      fulladder
+Xfulladder3 A3 B3  C3 S3  C4 VDD  GND      fulladder
+
+.ends
+
+
+***fulladder***
+.subckt   fulladder  A B  C S  Cout VDD  GND
+
+Xhalfadder1  A  B  w1  w2  VDD  GND      halfadder
+Xhalfadder2  w1 C  S   w3  VDD  GND      halfadder
+
+Xnor1       w3 w2 w4 VDD  GND nor
+Xinv1       w4 Cout  VDD  GND inv
+
+.ends
+
+***halfadder***
+.subckt   halfadder  X Y  S C  VDD  GND
+
+Xnand21 X Y    w1  VDD  GND        nand
+Xinv1   w1  C     VDD  GND           inv
+XXOR1  X Y    S   VDD  GND         xor
+
+.ends
+***XOR***
+.subckt   xor  X Y  F  VDD  GND
+
+MnMos1   inv_X  X  gnd  gnd  n_18  W=0.5u  L=180n
+MpMos1   inv_X  X  vdd  vdd  p_18  W=1u    L=180n 
+
+MnMos2   inv_Y  Y  gnd  gnd  n_18  W=0.5u  L=180n
+MpMos2   inv_Y  Y  vdd  vdd  p_18  W=1u    L=180n 
+
+MpMos3   w1  X      vdd  vdd   p_18  W=1u  L=180n 
+MpMos4   w2  inv_X  vdd  vdd   p_18  W=1u  L=180n 
+MpMos5   F   inv_Y  w1   vdd   p_18  W=1u  L=180n 
+MpMos6   F   Y      w2   vdd   p_18  W=1u  L=180n
+
+MnMos7   F   X      w3   gnd  n_18  W=0.5u  L=180n
+MnMos8   F   inv_Y  w3   gnd  n_18  W=0.5u  L=180n
+MnMos9   w3  inv_X  gnd  gnd  n_18  W=0.5u  L=180n
+MnMos10  w3  Y      gnd  gnd  n_18  W=0.5u  L=180n
+.ends
+***inverter***
+.subckt   inv  in  out_1  VDD  GND
+
+MnMos   out_1  in  gnd  gnd  n_18  W=0.5u  L=180n
+MpMos   out_1  in  vdd  vdd  p_18  W=1u  L=180n 
+
+.ends
+***nand***
+.subckt   nand  A  B  out_2  VDD  GND
+
+MpMos11   out_2  A  vdd  vdd  p_18  W=1u  L=180n 
+MpMos12   out_2  B  vdd  vdd  p_18  W=1u  L=180n 
+
+
+MnMos1   out_2  A  n1_s  gnd  n_18  W=0.5u  L=180n
+MnMos2   n1_s   B  gnd  gnd  n_18  W=0.5u  L=180n
+
+.ends
+***nor***
+.subckt   nor  C  D  out_3  VDD  GND
+
+MpMos3   p3_d   C  vdd  vdd  p_18  W=1u  L=180n 
+MpMos4   out_3  D  p3_d  vdd  p_18  W=1u  L=180n 
+
+
+MnMos3   out_3  D  gnd  gnd  n_18  W=0.5u  L=180n
+MnMos4   out_3  C  gnd  gnd  n_18  W=0.5u  L=180n
+
+.ends
+

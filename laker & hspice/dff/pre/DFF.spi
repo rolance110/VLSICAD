@@ -1,0 +1,41 @@
+
+***DFF***
+.subckt   DFF  CLK  D  reset  Q  QX  VDD  GND
+
+
+Xnand21 w1 w2    w3  VDD  GND         nand2
+Xnand31 w3 CLK   reset  w2   VDD  GND    nand3
+Xnand32 w2 CLK   w1  w4   VDD  GND    nand3
+Xnand33 w4 D   reset  w1   VDD  GND    nand3
+
+Xnand22 w2 QX  Q  VDD  GND         nand2
+Xnand34 Q w4  reset  QX VDD  GND         nand3
+
+.ends
+
+
+
+***nand3***
+.subckt   nand3  X  Y  Z  out_3  VDD  GND
+
+MpMos1   out_3  X  vdd  vdd  p_18  W=1u  L=180n 
+MpMos2   out_3  Y  vdd  vdd  p_18  W=1u  L=180n 
+MpMos3   out_3  Z  vdd  vdd  p_18  W=1u  L=180n 
+
+MnMos4   out_3  X  n1_s  gnd  n_18  W=0.5u  L=180n
+MnMos5   n1_s   Y  n2_s  gnd  n_18  W=0.5u  L=180n
+MnMos6   n2_s   Z  gnd  gnd  n_18  W=0.5u  L=180n
+
+
+.ends
+***nand2***
+.subckt   nand2  A  B  out_2  VDD  GND
+
+MpMos7   out_2  A  vdd  vdd  p_18  W=1u  L=180n 
+MpMos8   out_2  B  vdd  vdd  p_18  W=1u  L=180n 
+
+
+MnMos9   out_2  A  n1_s  gnd  n_18  W=0.5u  L=180n
+MnMos10   n1_s   B  gnd  gnd  n_18  W=0.5u  L=180n
+
+.ends
